@@ -1,0 +1,1223 @@
+/*----------------------------------------------------------/
+[TABLE OF CONTENTS]
+
+  01. GENERAL
+  02. FIXED-MENU
+  03. CAROUSEL
+  04. WORKS
+  05. MOSAIC
+  06. ABOUT-ME
+  07. INSTAGRAM
+  08. FOOTER
+
+
+/*-----------------------------------------------------------*/
+/*01. GENERAL ------------------*/
+/*-----------------------------------------------------------*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 15px;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    color: #5b5b5b;
+    font-family: 'Karla', sans-serif;
+    background: #fafbfc;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+body,
+li,
+address {
+    line-height: 24px
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p {
+    margin: 0 0 20px
+}
+
+a {
+    color: #70aed2;
+    transition: all 150ms ease-in;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    color: #3b3b3b;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 7px;
+    letter-spacing: -0.2px;
+}
+
+h5 {
+	font-size: 15px;
+	line-height: 19px;
+	letter-spacing: -0.2px;
+}
+
+h6 {
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: -0.2px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: none;
+}
+
+ul {
+    padding: 0 0 0 18px
+}
+
+ol {
+    padding: 0 0 0 20px
+}
+
+ul,
+ol {
+    margin-bottom: 15px
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+/*-----------------------------------------------------------*/
+/*02. FIXED-MENU ------------------*/
+/*-----------------------------------------------------------*/
+
+#fixed-menu {
+    max-height: 10%;
+}
+
+.navbar {
+    background: rgba(29,29,33,0.7)!important;
+    height: 65px;
+    max-height: 65px;
+    background: transparent;
+    transition: all 0.3s;
+    border:none;
+}
+   
+#cssmenu {
+    background: none;
+    transition: all 0.3s;
+    margin: 0;
+    position: fixed;
+}
+
+#cssmenu  ul li {
+    display: inline-table;
+    margin: 24px 7px 10px;
+}
+
+#cssmenu  ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+#cssmenu  ul li a:hover{
+    color: gray;
+    text-decoration: none; 
+}
+
+#cssmenu .nav {
+    margin: 0 20px;
+}
+
+#cssmenu .socialbar li {
+    margin: 15px 7px 10px;
+}
+
+ul.social-buttons li a{
+    height: 30px;
+    width: 30px;
+    font-size: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#cssmenu ul li {    
+    width: auto;
+    border: none;
+}
+
+.social-buttons {
+    float: right;
+}
+
+.navbar {
+    margin: 0 auto;
+}
+
+.navbar-sec  {
+    margin: 0 15px;
+    display: inline-table;
+}
+
+.nav-cont ul {
+    height: 50%;
+}
+
+.socialbar {
+    float: right;
+    margin-top: 0;
+}
+
+#cssmenu  ul.socialbar {
+    position: fixed;
+    right: 0;
+}
+
+#cssmenu > ul > li:hover > a {
+    color: #70aed2;
+}
+
+#cssmenu ul ul li a:hover {
+    color: #70aed2;
+}
+
+#cssmenu  ul {
+    max-height: 65px;
+}
+
+.navbar {
+    margin: 0 auto;
+}
+
+a.brandico-facebook {
+    width: 30px;
+    height: 30px;
+}
+
+ul.social-buttons.socialbar li {
+
+}
+
+ul.nav.navbar-nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    clear: both;
+}
+
+ul.nav.navbar-nav a:hover {
+    background: none;
+}
+
+ul#demo2.social-buttons.socialbar li {
+    display: none;
+}
+
+.brandico-twitter-bird:before {
+    position: relative;
+    vertical-align: middle;
+    top:-15px;
+}
+
+.brandico-linkedin:before {
+    position: relative;
+    vertical-align: middle;
+    top:-15px;
+}
+
+.brandico-instagram:before {
+    position: relative;
+    vertical-align: middle;
+    top:-15px;
+}
+
+.brandico-facebook:before {
+    position: relative;
+    vertical-align: middle;
+    top:-15px;
+}
+
+.nav>li>a {
+    display: inline-table;
+    padding: 0;
+
+}
+
+a.brandico-facebook {
+    width: 30px;
+    height: 30px;
+}
+
+ul.social-buttons.socialbar li {
+
+}
+
+ul.nav.navbar-nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    clear: both;
+}
+
+ul.nav.navbar-nav a:hover {
+    background: none;
+}
+
+ul#demo2.social-buttons.socialbar li {
+    display: none;
+}
+
+ul.social-buttons {
+    margin: 0px;
+}
+
+ul#demo2.social-buttons.socialbar {
+    padding: 0;
+    position: absolute;
+    right: 0;
+    margin: 0 20px;
+}
+
+
+
+
+/*-----------------------------------------------------------*/
+/*03. CAROUSEL ------------------*/
+/*-----------------------------------------------------------*/
+
+
+#Carousel {
+    background: #CBCEBE;
+}
+
+.item {
+    width: 100%;
+    height: 500px;
+    min-height: 0; 
+    background-size: cover;
+    background-position: center top;
+}
+
+
+.item img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center top;
+}
+
+.carousel-inner>.item>img{
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center top;
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0.1;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 0.8;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+html, 
+body, 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+    height: 100%;
+}
+
+.img-responsive img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.carousel-inner>.item>img {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+}
+
+.carousel-indicators li {
+    font-size: 30px;
+}
+
+
+
+
+/*-----------------------------------------------------------*/
+/*04. WORKS ------------------*/
+/*-----------------------------------------------------------*/
+
+#works {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.works-sec {
+    width: 100%;
+}
+
+#works::before  {
+    background: rgba(29,29,33,0.85)!important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.specs img {
+    margin-top: 30px;
+    background-position: center center;
+    vertical-align: baseline;
+}
+
+.works-pics  {
+    width: 48%;
+    padding: 0;
+    margin-right: 20px;
+    margin: 2px;
+    display: inline-table;
+    float: none;
+}
+
+.works-pics img{
+    width: 100%;
+    height: auto;
+}
+
+.specs h3:hover {
+    color: white;
+    background: black;
+    font-weight: 500;
+}
+
+.specs img {
+    margin-top: 30px;
+    background-position: center center;
+    vertical-align: baseline;
+}
+
+.specs h3 {
+    color: white;
+    background: rgba(5, 5, 5, 0.7);
+    padding: 5px;
+    font-family: bold 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 80%;
+    border-radius: 20%;
+    margin-bottom: 40px;
+    position: relative;
+    top: -50px;
+    margin: 0 auto;
+}
+
+.specs a {
+    text-decoration: none;
+}
+
+
+/*-----------------------------------------------------------*/
+/*05. MOSAIC ------------------*/
+/*-----------------------------------------------------------*/
+
+#pics-wrap {
+    margin-top: 20px;
+    width: 100%; 
+    height: auto;
+}
+
+.lrg {
+    width: 45.85%; 
+    float: left;
+    height: auto;
+    margin: 5px 5px 0;
+}
+
+.med {
+    width: 29.2%;
+    float: left;
+    height: auto;
+    margin:5px 5px 0;
+}
+
+.sml {
+    width: 15.8%;
+    float: left;
+    height: auto;
+    margin:5px 5px 0;
+}
+
+.med img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin:5px 5px 0;
+}
+
+.sml img {
+    width: 100%;
+    height: auto;
+    display: inline;
+    margin:5px 5px 0;
+}
+
+.lrg img {
+    width: 100%;
+    height: auto;
+    background: black;
+    display: inline;
+    margin:5px 5px 0;
+}
+
+.pics-list li{
+    display: inline-table;
+    width: auto;
+}
+
+.pics-list li {
+    width: auto;
+}
+
+ul.pics-list  {
+    text-align: center;
+}
+
+.pics-nav {
+    width: 100%;
+}
+
+.pics-list li a:hover {
+    text-decoration: none;
+}
+
+.pics-list li a h3:hover {
+    color: gray;
+}
+
+.pics .pics-wrapper{
+    margin: 10px;
+    clear: right;
+}
+
+.works-sec {
+    text-align: center;
+    padding: 20px;
+}
+
+/*-----------------------------------------------------------*/
+/*06. ABOUT-ME ------------------*/
+/*-----------------------------------------------------------*/
+
+#about-me {
+    margin-top: 80px;
+}
+
+.row img {
+    width: 100%;
+}
+
+.footer ul.social-buttons li a{
+    height: 30px;
+    width: 30px;
+    font-size: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.menu-wrapper {
+    margin: 30px;
+}
+
+.pics-nav {
+    display: inline-block;
+}
+
+.pics-list li a h3 .slash {
+    color: #3b3b3b;
+}
+
+
+/*-----------------------------------------------------------*/
+/*07. INSTAGRAM ------------------*/
+/*-----------------------------------------------------------*/
+
+#instagram {
+    margin-top: 80px;
+}
+
+.row .image {
+    float: left;
+    margin: 30px;
+    width: 80%;
+    height: 90%;
+}
+
+button {
+    width: 90%;
+    max-width: 200px;
+    background: #70aed2;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;    
+}
+
+button a:hover {
+    text-decoration: none;
+}
+
+a#insta-btn.brandico-instagram::before {
+   position: relative;
+   left: -10px;
+   top: 0;
+}
+
+button:hover {
+background: #6ba0bf;
+}
+
+i {
+    color: white;
+}
+
+#instagram {
+    text-align: center;
+}
+
+button a.brandico-instagram::before{
+    color: white;
+    vertical-align: baseline;
+    position: none;
+
+}
+
+#real-footer{
+    font-family: 'Karla', sans-serif;
+}
+
+.caro-text {
+    background: white;
+    height: 100px;
+    width: 100px;
+}
+
+.foot-wrap {
+    text-align: center;
+}
+
+#real-footer ul.social-buttons li  {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+
+ul#demo3.social-buttons {
+    width: 100%;
+    padding: 0;
+}
+
+a.thumbnail img {
+    width: 100%;
+}
+
+#about-me .insta-text {
+    text-align: center;
+}
+
+.media-wrap {
+    width: 40%;
+    display: inline;
+    width: 15%;
+}
+
+a.thumbnail {
+    width: 40%;
+    min-width: 80px;
+    display: inline-table;
+    margin: 0;
+}
+
+.med-pics {
+    margin: 0 auto;
+}
+
+.small-pics {
+    margin: 0 auto;
+}
+
+.insta-par {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.media-wrap {
+    width: 80%;
+}
+
+a .thumbnail {
+    margin: 0;
+    width: 18%;
+
+}
+
+
+
+/*-----------------------------------------------------------*/
+/*08. FOOTER ------------------*/
+/*-----------------------------------------------------------*/
+
+.footer-icons ul.social-buttons  {
+    margin: 0;
+}
+
+.foot-wrap {
+    margin-right: 20px;
+    margin-right: 20px;
+}
+
+#real-footer {
+    padding-top: 0px;
+}
+
+#demo3 li .brandico-facebook:before {
+    position: relative;
+    top: -15px;
+}
+
+#demo3 li .brandico-instagram:before {
+    position: relative;
+    top: -15px;
+}
+
+
+#demo3 li .brandico-twitter-bird:before {
+    position: relative;
+    top: -15px;
+}
+
+.footer-icons #demo3 li .brandico-linkedin:before {
+    position: relative;
+    top: -15px;
+}
+
+.footer-icons ul li a .brandico-facebook:before {
+    font-size: 14px;
+    position: relative;
+    top: 0px;
+}
+
+ul#demo3 li:hover a {
+    transform: rotateZ(720deg) scale(1.6);
+    transition: 0.6s;
+} 
+
+.some {
+    margin: 0 auto;
+}
+
+.footer-icons {
+    margin: 0 auto;
+}
+
+#real-footer {
+    margin-top: 60px;
+    padding-top: 30px;
+    background:rgb(29,29,33);
+}
+
+.second-footer {
+    background: rgb(31,30,33);
+    text-align: center;
+    font-size: 12px;
+}
+
+.second-footer p {
+    padding: 8px;
+    margin: 0;
+}
+
+.right-sec {
+    float: right;
+}
+
+
+
+/*/////////////////////Form Area///////////////////////*/
+
+form {
+  width: 90%;
+  margin: 15px auto;
+  
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: solid 1px #ccc;
+  padding: 4px 7px;
+  font-family: sans-serif;
+}
+
+#eml, #tel {
+  width: 49%;
+}
+
+#tel {
+  float: right;
+}
+
+#eml {
+    float: left;
+}
+
+.form-btn {
+  float: right;
+  width: 45%;
+  border-radius: 9px;
+  padding: 4px;
+  margin: 4px;
+}
+
+.form-btn:hover {
+background: #6ba0bf;
+}
+
+#sub-btn {
+    float: left;
+}
+
+
+
+
+
+/*////////////////////////////// PORTFOLIO /////////////////////////////*/
+
+
+/*-----------------------------------------------------------*/
+/*09. PICS-COLLECTION ------------------*/
+/*-----------------------------------------------------------*/
+
+#portfolio {
+    background: #0a0e0a; /*#1F2023*/
+}
+
+.sec-name-top {
+    margin-top: 80px;
+}
+
+.sec-name, .sec-name-top {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+ .sec-name h2, .sec-name-top h2{
+    color: white;
+    margin-top: 15px;
+}
+
+
+.pics-slick {
+    border-left: solid black 7px;
+    border-right: solid black 7px;
+}
+
+.pics-slick img:active {
+    border: none;
+}
+
+.tape {
+    width: 100%;
+    height: 10px;
+    max-height: 10px;
+    background-image: url("styles/image/download3.jpg");
+    background-size: contain;
+}
+
+
+.pics-slick img:hover {
+ -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+ 
+    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////*/
+/*// Small devices (landscape phones, 576px and up)*/
+/*//////////////////////////////////////////////////////////////////*/
+
+@media (min-width: 576px) { 
+
+#cssmenu ul.social-buttons li a {
+    height: 30px;
+    width: 30px;
+}
+
+ul#demo2.social-buttons.socialbar li {
+    display: inline-table;
+}
+
+.works-pics {
+    width: 48%;
+    padding: 0;
+} 
+
+.carousel-inner>.item>img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+.lrg {
+   width: 47.5%; 
+   display: inline-block;
+   float: left;
+   margin: 5px;
+}
+
+.med{
+    width: 31%;
+    display: inline-block;
+    float: left;
+}
+
+.sml {
+    width: 17.7%;
+    display: inline-block;
+    float: left;
+}
+
+
+a.thumbnail {
+    width: 24%;
+    display: inline-table;
+}
+
+
+#about-me .insta-text {
+    text-align: center;
+}
+
+.some {
+    margin: 0 auto;
+}
+
+.footer-icons {
+    margin: 0 auto;
+}
+
+.insta-par {
+    width: 90%;
+    clear: both;
+}
+
+.media-wrap {
+    width: 80%;
+    float: none;
+}
+
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*// Medium devices (tablets, 768px and up)*/
+/*////////////////////////////////////////////////////////////////////*/
+@media (min-width: 768px) { 
+
+.carousel-inner>.item>img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+ul#demo2.social-buttons.socialbar li {
+    display: inline-table;
+}
+
+.lrg {
+   width: 47.5%; 
+   display: inline-block;
+   float: left;
+}
+
+.med{
+    width: 31%;
+    display: inline-block;
+    float: left;
+}
+
+.sml {
+    width: 18%;
+    display: inline-block;
+    float: left;
+}
+
+
+#about-me .insta-text {
+    text-align: center;
+}
+
+.insta-par {
+    width: 35%;
+    float: left
+}
+
+.media-wrap {
+    width: 60%;
+    float: right;
+}
+}
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*// Large devices (desktops, 992px and up)*/
+/*////////////////////////////////////////////////////////////////////*/
+
+@media (min-width: 992px) { 
+
+.carousel-inner>.item>img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+ul#demo2.social-buttons.socialbar li {
+    display: inline-table;
+}
+
+.lrg {
+   width: 47.5%; 
+   display: inline-block;
+   float: left;
+}
+
+.med{
+    width: 31%;
+    display: inline-block;
+    float: left;
+}
+
+.sml {
+    width: 18%;
+    display: inline-block;
+    float: left;
+}
+
+.row {
+    margin: 0 auto;
+}
+
+#about-me .insta-text {
+    text-align: center;
+}
+
+.insta-par {
+    width: 35%;
+    float: left
+}
+
+.media-wrap {
+    width: 60%;
+    float: right;
+}
+
+.tape {
+    height: 20px;
+    max-height: 20px;
+}
+
+
+
+
+
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////*/
+/*// Extra large devices (large desktops, 1200px and up)*/
+/*///////////////////////////////////////////////////////////////////////*/
+
+@media (min-width: 1200px) { 
+
+.carousel-inner>.item>img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+ul#demo2.social-buttons.socialbar li {
+    display: inline-table;
+}
+
+.works-pics  {
+    width: 23.2%;
+    padding: 0;
+    margin-right: 20px;
+    margin: 2px;
+    display: inline-table;
+    float: none;
+}
+
+.lrg {
+   width: 47.5%; 
+   display: inline-block;
+   float: left;
+}
+
+.med{
+    width: 31%;
+    display: inline-block;
+    float: left;
+}
+
+.sml {
+    width: 18%;
+    display: inline-block;
+    float: left;
+}
+
+#about-me .insta-text {
+    text-align: center;
+}
+
+.some {
+    float: left;
+}
+
+.bla-bla {
+    float: left;
+}
+
+.right-sec form {
+    width: 60%;
+    height: auto;
+}
+
+.insta-par {
+    width: 35%;
+    float: left
+}
+
+.media-wrap {
+    width: 60%;
+    float: right;
+}
+
+.tape {
+    height: 20px;
+    max-height: 20px;
+} 
+
+}

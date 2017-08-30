@@ -69,12 +69,59 @@ $('#str').click(function() {
 
 
 
-$('.lazy').slick({
-  lazyLoad: 'ondemand',
-  slidesToShow: 7,
-  slidesToScroll: 1,
-});
+/*-----------------------------------------------------------*/
+/*02. SLICK CAROUSEL ------------------*/
+/*-----------------------------------------------------------*/
 
+$('.lazy').slick({
+  dots: false,
+  infinite: true,
+  speed: 600,
+  slidesToShow: 7,
+  slidesToScroll: 2,
+  responsive: [
+  {
+    breakpoint: 1024,
+    settings: {
+        slidesToShow: 6,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+    breakpoint: 600,
+    settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1
+      }
+    },
+    {
+    breakpoint: 480,
+    settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+                
+
+
+// if (screen.width > 300) {
+//         $('.lazy').slick({
+//         lazyLoad: 'ondemand',
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//     });
+
+// } else {
+//         $('.lazy').slick({
+//         lazyLoad: 'ondemand',
+//         slidesToShow: 5,
+//         slidesToScroll: 2,
+//     });
+// }
 
 
 

@@ -9,7 +9,11 @@
   06. ABOUT-ME
   07. INSTAGRAM
   08. FOOTER
+  09. PICS-COLLECTION 
+  10. CONTACT
+  11. CONTACT-FOOTER 
 
+  MEDIA QUERIES
 
 /*-----------------------------------------------------------*/
 /*01. GENERAL ------------------*/
@@ -637,6 +641,7 @@ button {
     width: 90%;
     max-width: 200px;
     background: #70aed2;
+    margin: 15px;
     color: white;
     border: none;
     text-transform: uppercase;
@@ -871,10 +876,9 @@ background: #6ba0bf;
     float: left;
 }
 
-
-
-
-
+.slick-next {
+    display: none;
+}
 /*////////////////////////////// PORTFOLIO /////////////////////////////*/
 
 
@@ -883,17 +887,21 @@ background: #6ba0bf;
 /*-----------------------------------------------------------*/
 
 #portfolio {
-    background: #0a0e0a; /*#1F2023*/
+    background: #22252c; /*#1F2023*/
+}
+
+.sec-name-top h2, .sec-name h2 {
+    font-family: 'Orbitron', sans-serif;
 }
 
 .sec-name-top {
     margin-top: 80px;
 }
 
-.sec-name, .sec-name-top {
+.sec-name, .sec-name-top  {
     text-align: center;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 200;
 }
 
  .sec-name h2, .sec-name-top h2{
@@ -902,9 +910,9 @@ background: #6ba0bf;
 }
 
 
-.pics-slick {
-    border-left: solid black 7px;
-    border-right: solid black 7px;
+.pics-slick img:nth-child(2) {
+    border-left: solid black 3px;
+    border-right: solid black 3px;
 }
 
 .pics-slick img:active {
@@ -913,24 +921,40 @@ background: #6ba0bf;
 
 .tape {
     width: 100%;
-    height: 10px;
-    max-height: 10px;
+    height: 20px;
+    max-height: 20px;
     background-image: url("styles/image/download3.jpg");
     background-size: contain;
 }
 
 
-.pics-slick img:hover {
- -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+.pics-slick img:nth-child(2):hover {
+ -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
     cursor: pointer;
  
     -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
     box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    border-radius: 40%;
+}
+
+
+
+.slick-slider {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.slick-prev {
+    left: -35px;
+}
+
+.slick-next {
+    right: -35px;
 }
 
 
@@ -940,6 +964,194 @@ background: #6ba0bf;
 
 
 
+
+
+
+
+
+
+
+
+
+/*/////////////////////////// CONTACT ME ///////////////////////////////*/
+ 
+
+/*-----------------------------------------------------------*/
+/*10. CONTACT ------------------*/
+/*-----------------------------------------------------------*/
+
+#contact {
+    background-image: url("styles/image/photographer.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.text-sec {
+    font-family: 'Karla', sans-serif;
+    background: rgba(10,0,0,0.5);
+    width: auto;
+    max-width: 280px;
+    height: auto;
+    position: relative;
+    top: 30%;
+    margin: 0 auto;
+    box-shadow: 4px 4px 3px black;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+#h4-cust {
+    font-family: 'Karla', sans-serif;
+    color: white; 
+    font-weight: 500;
+    font-size: 18px;
+    padding: 8px;
+    color: #81CCEA; 
+}
+
+.text-sec {
+    color: white;
+    text-align: center;
+}
+
+#contact {
+    height: 130%;
+}
+
+/*.top-text {
+    padding-top: 20px;   
+}
+*/
+.bot-text {
+    display: inline-table;
+    margin: 0;
+}
+
+.bot-text .para p {
+    display: inline-block;
+    margin: 0;
+}
+
+#e-mail {
+    width: auto;
+}
+
+#e-mail a:hover{
+    text-decoration: none;
+    color: #70a568;
+}
+
+#ph-numb {
+    width: auto;
+}
+
+
+
+
+
+/*-----------------------------------------------------------*/
+/*11. CONTACT FOOTER  ------------------*/
+/*-----------------------------------------------------------*/
+
+#footer-cont {
+    margin-top: 0;
+    padding-top: 30px;
+    background:rgb(29,29,33);
+}
+
+
+
+
+/*//////////////////////SCROLLING TEXT////////////////////*/
+
+
+.fadeout {
+  color: #ffffff;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: helvetica;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+
+  -webkit-animation: fadeout 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeout 4s; /* Firefox < 16 */
+        -ms-animation: fadeout 4s; /* Internet Explorer */
+         -o-animation: fadeout 4s; /* Opera < 12.1 */
+            animation: fadeout 4s;
+}
+
+@keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fadeout2 {
+  color: #ffffff;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: helvetica;
+  position: absolute;
+  left: 30%;
+  top: 55%;
+
+  -webkit-animation: fadeout 10s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeout 10s; /* Firefox < 16 */
+        -ms-animation: fadeout 10s; /* Internet Explorer */
+         -o-animation: fadeout 10s; /* Opera < 12.1 */
+            animation: fadeout 10s;
+}
+
+@keyframes fadeout2 {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////*/
+/*// Small devices (landscape phones, 300px and up)*/
+/*//////////////////////////////////////////////////////////////////*/
+
+@media (min-width: 300px) {
+
+.some {
+    margin: 10px;
+}
+
+.bla-bla {
+    margin: 10px;
+}
+
+.right-sec {
+    margin: 15px;
+}
+
+
+}
 
 
 
@@ -1027,6 +1239,19 @@ a.thumbnail {
     float: none;
 }
 
+.fadeout {
+    font-size: 20px;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+
+.fadeout2 {
+    font-size: 20px;
+    position: absolute;
+    left: 40%;
+    top: 60%;
+}
 
 
 
@@ -1076,6 +1301,48 @@ ul#demo2.social-buttons.socialbar li {
     width: 60%;
     float: right;
 }
+
+.fadeout {
+    font-size: 20px;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+}
+
+.fadeout2 {
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+}
+.text-sec {
+    font-size: 18px;
+    max-width: 500px;
+}
+
+#h4-cust {
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: #81CCEA; 
+}
+
+.some {
+    margin: 0;
+}
+
+.bla-bla {
+    margin: 0;
+}
+
+.right-sec {
+    margin: 0;
+}
+
+.slick-slider {
+    width: 92%;
+    margin: 0 auto;
+}
+
 }
 
 
@@ -1136,9 +1403,51 @@ ul#demo2.social-buttons.socialbar li {
     max-height: 20px;
 }
 
+#contact {
+    height: 100%;
+}
 
+.fadeout {
+    font-size: 26px;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
 
+.fadeout2 {
+    font-size: 26px;
+    position: absolute;
+    left: 40%;
+    top: 60%;
+}
 
+.text-sec {
+    font-size: 20px;
+    max-width: 700px;
+}
+
+#h4-cust {
+    font-size: 27px;
+    padding-bottom: 10px;
+    color: #81CCEA; 
+}
+
+.some {
+    margin: 0;
+}
+
+.bla-bla {
+    margin: 0;
+}
+
+.right-sec {
+    margin: 0;
+}
+
+.slick-slider {
+    width: 92%;
+    margin: 0 auto;
+}
 
 }
 
@@ -1220,4 +1529,56 @@ ul#demo2.social-buttons.socialbar li {
     max-height: 20px;
 } 
 
+.fadeout {
+    font-size: 32px;
+    position: absolute;
+    left: 20%;
+    top: 40%;
 }
+
+.fadeout2 {
+    font-size: 32px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+}
+
+.text-sec {
+    font-size: 23px;
+    max-width: 1200px;
+    padding: 30px;
+}
+
+#h4-cust {
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: #81CCEA; 
+}
+
+.some {
+    margin: 0;
+}
+
+.bla-bla {
+    margin: 0;
+}
+
+.right-sec {
+    margin: 0;
+}
+
+.slick-slider {
+    width: 92%;
+    margin: 0 auto;
+}
+
+}
+
+
+
+
+
+
+
+
+
